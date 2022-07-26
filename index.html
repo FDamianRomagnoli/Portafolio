@@ -22,26 +22,83 @@
 
     <main>
         <section class="main__portada">
-            
+            <picture>
+                <source media="(min-width: 900px)" srcset="src/portada-desk.jpg">
+                <source media="(min-width: 500px)" srcset="src/portada-tablet.jpg">
+                <img src="src/portada-mobile.jpg" alt="imagen decorativa, portada de la pagina,portada, imagen de bienvenida">
+            </picture>
+            <p class="portada__title">BIENVENIDOS A MI SITIO</p>
+            <p class="portada__autor">Franco D. Romagnoli</p>
         </section>
-        
-        <section class="main__habilidades">
 
+        <section class="main__sobremi">
+            <div class="separador">
+                <p>SOBRE MI</p>
+            </div>
+            <picture class="foto-personal">
+                <img src="" alt="">
+            </picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit maxime perferendis numquam repellendus. Tempora, eos possimus. Eius pariatur possimus sequi inventore nesciunt magnam asperiores quaerat perspiciatis neque. Omnis, in.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quidem eaque atque necessitatibus animi explicabo similique laudantium molestiae sunt, ipsum, repudiandae dignissimos nobis dolorem mollitia voluptatem corporis odio corrupti! Nostrum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ea quod. Pariatur nisi illo harum veritatis, voluptas, doloremque nihil obcaecati unde ad, cum eaque? Accusantium aut cumque temporibus nisi a.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quidem eaque atque necessitatibus animi explicabo similique laudantium molestiae sunt, ipsum, repudiandae dignissimos nobis dolorem mollitia voluptatem corporis odio corrupti! Nostrum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ea quod. Pariatur nisi illo harum veritatis, voluptas, doloremque nihil obcaecati unde ad, cum eaque? Accusantium aut cumque temporibus nisi a.
+            </p>
+        </section>
+
+        <section class="main__habilidades">
+            <div class="separador">
+                <p>HABILIDADES</p>
+            </div>
+
+            <div class="habilidades__table">
+                <ul class="habilidades__table-list">
+                    <li>HTML<div>B</div></li>
+                    <li>HTML<div>B</div></li>
+                    <li>HTML<div>B</div></li>
+                    <li>HTML<div>B</div></li>
+                </ul>
+            </div>
         </section>
 
         <section class="main__portafolio">
-
+            <div class="separador">
+                <p>PORTAFOLIO</p>
+            </div>
+            <div class="portafolio-container">
+                <div class="proyecto1"></div>
+            </div>
         </section>
 
         <section class="main__contacto">
-
+            <div class="separador">
+                <p>CONTACTO</p>
+            </div>
+            <div class="contacto-container">
+                <form action="">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <button type="submit"></button>
+                </form>
+                <div class="contacto-redes">
+                    <a href=""><span></span></a>
+                    <a href=""><span></span></a>
+                </div>
+                <div class="contacto-tel">
+                    <span></span>
+                    <p></p>
+                </div>
+                <div class="contacto-correo">
+                    <span></span>
+                    <p></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <span class="footer__logo"></span>
         <nav class="footer__nav">
-            <button class="footer__nav-button""></button>
             <ul class="footer__nav-list">
                 <li><a href="">SOBRE MI</a></li>
                 <li><a href="">HABILIDADES</a></li>
