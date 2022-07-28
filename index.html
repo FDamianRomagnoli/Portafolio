@@ -76,12 +76,14 @@
                 <p>CONTACTO</p>
             </div>
             <div class="contacto-container">
-                <form action="">
-                    <input type="text" placeholder="¿Cual es tu nombre?">
-                    <input type="text" placeholder="¿Tu correo electronico?">
-                    <input type="text" placeholder="Asunto">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <form action="https://formsubmit.co/fdamianromagnoli@gmail.com" method="POST">
+                    <input type="text" placeholder="¿Cual es tu nombre?" name="name">
+                    <input type="text" placeholder="¿Tu correo electronico?" name="email">
+                    <input type="text" placeholder="Asunto" name="subject">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button type="submit">ENVIAR</button>
+                    <input type="hidden" name="_next" value="http://192.168.0.17:5500/index.html#contacto">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
                 <div class="contacto-redes">
                     <a href="https://github.com/FDamianRomagnoli" target="_blank"><span class="contacto-github"></span></a>
