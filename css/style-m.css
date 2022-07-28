@@ -169,7 +169,9 @@ a{
     display: flex;
     gap: 20px;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 20px 15px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .habilidades__table-list li{
@@ -311,4 +313,141 @@ a{
     color: #fff;
     text-align: center;
     padding-top: 110px;
+}
+
+.contacto-correo p,.contacto-tel p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__nav{
+    position: absolute;
+    width: 80%;
+    top: 51px;
+    right: 0;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px 0px #000;
+}
+
+.header__nav-list{
+    display: grid;
+    margin-bottom: 30px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0px 0px 4px 0px #000;
+}
+
+.header__nav-list li{
+    padding: 30px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-sobremi{
+    border-bottom: .3px solid #000;
+    border-right: .3px solid #000;
+}
+
+.nav-habilidades{
+    border-bottom: .3px solid #000;
+}
+
+.nav-portafolio{
+    border-right: .3px solid #000;
+}
+
+
+.header__nav-list a{
+    padding: 50px 20px;
+}
+
+.nav-sobremi i{
+    display: inline-block;
+    margin: 0 auto;
+    background-image: url(../src/sobremi.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.nav-habilidades i{
+    display: inline-block;
+    margin: 0 auto;
+    background-image: url(../src/habilidades.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 37px;
+}
+
+.nav-portafolio i{
+    display: inline-block;
+    margin: 0 auto;
+    background-image: url(../src/portafolio.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 27px;
+}
+
+.nav-contacto i{
+    display: inline-block;
+    margin: 0 auto;
+    background-image: url(../src/contacto.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 28px;
+}
+
+.icon-habilidades{
+    display: inline-block;
+    background-image: url(../src/email.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-portafolio{
+    display: inline-block;
+    background-image: url(../src/email.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.icon-contacto{
+    display: inline-block;
+    background-image: url(../src/email.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+@media (max-width: 310px) {
+    .contacto-correo p,.contacto-tel p{
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .contacto-container form input,.contacto-container form textarea{
+        font-size: 13px;
+    }
+    
+  }
+
+@media (max-width: 283px) {
+    .contacto-correo p,.contacto-tel p{
+        font-size: 12px;
+        font-weight: 700;
+    }
 }
