@@ -1,0 +1,33 @@
+.habilidades__table-list{
+    max-width: 500px;
+    gap: 30px;
+    padding: 35px;
+}
+
+
+.habilidades__table-list div{
+    width: 80%;
+    padding: 10px;
+}
+
+.proyecto{
+    height: 300px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.proyecto1,.proyecto2,.proyecto3{
+    padding-top: 140px;
+}
+
+.portada__title{
+    font-size: 45px;
+}
+
+.main__portada{
+    background-image: url("../src/portada-tablet.png");
+}
+
+@media (min-width: 600px) {
+   
+}
