@@ -18,30 +18,49 @@ class proyectCard extends HTMLElement {
         const template = document.createElement("TEMPLATE");
 
         template.innerHTML = `
-            <div class="proyect-card>
+            <a class="proyect-card" href="#contacto">
 
-                <div class="proyect-card__front>
-
+                <div class="proyect-card__front">
+                    <h2>${this.title}</h2>
                 </div>
 
-                <div class="proyect-card__description>
-                
+                <div class="proyect-card__description">
+                    <p>${this.description}</p>
                 </div>
-            </div>
+
+            </a>
 
             <style>
                 ${this.getStyle()}
             </style>
 
         `;
-
         return template;
     }
 
     getStyle(){
         return `
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+
+
+        div{
+            width: 80%;
+            height: 600px;
+        }
+
+        .proyect-card__front{
+            height: 40%;
+        }
         
-        
+        .proyect-card__description{
+            height: 60%;
+        }
+
         `;
     }
 
