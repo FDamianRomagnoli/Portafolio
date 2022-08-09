@@ -5,7 +5,7 @@ class proyectCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["title","description","image"];
+        return ["title","description","image","url"];
     }
 
     attributeChangedCallback(atributo, valorAntiguo, valorNuevo) {
@@ -18,7 +18,7 @@ class proyectCard extends HTMLElement {
         const template = document.createElement("TEMPLATE");
 
         template.innerHTML = `
-            <a class="proyect-card" href="#contacto">
+            <a class="proyect-card" href="${this.url}">
 
                 <div class="proyect-card__front">
                     <h2>${this.title}</h2>
