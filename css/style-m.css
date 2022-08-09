@@ -30,18 +30,31 @@ header{
     background-repeat: no-repeat;
 }
 
-.header__nav-button{
-    display: inline-block;
+.header__nav-button-container{
     position: absolute;
-    top: calc( 50% - 18px );
-    right: 15px;
+    top: calc( 50% - 21px );
+    right: 6px;
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+
+.header__nav-button{
+    position: relative;
+    top: 2px;
+    display: inline-block;
     background-image: url("../src/bar.svg");
     width: 27px;
     height: 35px;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    margin: 0 auto;
 }
+
+.header__nav-button-container:active{
+    background-color: rgba(225, 224, 224,.5);
+}
+
+
 
 .header__nav{
     display: none;
@@ -52,7 +65,8 @@ header{
     position: relative;
     width: 100%;
     height: calc( 100vh - 100px);
-    max-height: 700px;
+    min-height: 370px;
+    max-height: 500px;
     background-image: url("../src/portada-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,9 +74,15 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    margin-top: 50px;
     box-shadow: 0px 0px 4px 0px #000;
 }
+
+.main__sobremi,.main__habilidades,.main__contacto,.main__portafolio{
+    padding-top: 50px;
+    position: relative;
+}
+
 
 .portada__autor{
     position: absolute;
@@ -74,9 +94,10 @@ header{
 }
 
 .portada__title{
+    position: relative;
     color: #fff;
-    margin: 0 50px;
-    margin-top: 30vh;
+    padding: 0 20px;
+    top: 100px;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, .4);
     font-style: normal;
     font-weight: 200;
@@ -103,7 +124,7 @@ header{
 .sobremi-container{
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 30px 30px 0px 30px;
     gap: 30px;
 }
 
@@ -160,7 +181,7 @@ a{
 }
 
 .habilidades__table{
-    margin: 30px;
+    margin: 30px 30px -20px 30px;
 }
 
 .habilidades__table-list{
@@ -193,7 +214,7 @@ a{
 
 .portafolio-container{
     display: flex;
-    margin: 30px;
+    margin: 50px 30px 0px 30px;
     flex-direction: column;
     gap: 30px;
 }
@@ -324,11 +345,12 @@ a{
 .header__nav{
     position: absolute;
     top: 51px;
-    right: 0;
+    right: 1px;
     width: 80%;
     max-width: 350px;
     height: auto;
-    background-color: #fff;
+    background-color: #ffffff;
+    border-radius: 10px;
     box-shadow: 0px 0px 4px 0px #000;
 }
 
@@ -338,6 +360,8 @@ a{
     text-align: center;
     grid-template-columns: 1fr 1fr;
     box-shadow: 0px 0px 4px 0px #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .header__nav-list li{
