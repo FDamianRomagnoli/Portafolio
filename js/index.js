@@ -42,3 +42,7 @@ btnNav4.addEventListener("click",() =>{
     estado = !estado;
     efectoMenu(estado);
 });
+
+function visitarProyecto(url){
+    window.open(url,"_blank");
+}

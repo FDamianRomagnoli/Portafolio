@@ -18,7 +18,7 @@ class proyectCard extends HTMLElement {
         const template = document.createElement("TEMPLATE");
 
         template.innerHTML = `
-            <a class="proyect-card" href="${this.url}">
+            <article class="proyect-card">
 
                 <div class="proyect-card__front">
                     <h2>${this.title}</h2>
@@ -26,9 +26,10 @@ class proyectCard extends HTMLElement {
 
                 <div class="proyect-card__description">
                     <p>${this.description}</p>
+                    <button class="proyect-card__button" onclick="visitarProyecto('${this.url}')">Visitar</button>
                 </div>
 
-            </a>
+            </article>
 
             <style>
                 ${this.getStyle()}
@@ -47,18 +48,32 @@ class proyectCard extends HTMLElement {
             box-sizing:border-box;
         }
 
+        :host{
+            max-width:300px;
+        }
 
-        div{
-            width: 80%;
-            height: 600px;
+
+        .proyect-card{
+            width: 100%;
+            height: 420px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
         }
 
         .proyect-card__front{
-            height: 40%;
+            height: 45%;
+            background: black;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
         
         .proyect-card__description{
             height: 60%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
         }
 
         `;

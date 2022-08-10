@@ -108,7 +108,7 @@ header{
 
 .separador{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 120px;
     text-align: center;
     flex-direction: column;
@@ -116,9 +116,10 @@ header{
     background-color: #000;
     color: #fff;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 24px;
-    line-height: 23px;
+    line-height: 25px;
+    margin-bottom: 50px;
 }
 
 .sobremi-container{
@@ -143,7 +144,7 @@ header{
 
 footer{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 200px;
     border-top: 1px solid #000;
     justify-content: space-between;
@@ -181,7 +182,7 @@ a{
 }
 
 .habilidades__table{
-    margin: 30px 30px -20px 30px;
+    margin: 30px 30px 0px 30px;
 }
 
 .habilidades__table-list{
@@ -214,8 +215,9 @@ a{
 
 .portafolio-container{
     display: flex;
-    margin: 50px 30px 0px 30px;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 30px;
 }
 
@@ -241,6 +243,7 @@ a{
     padding: 30px;
     box-shadow: 0px 0px 4px 0px #000;
     background-color: rgb(15, 15, 15);
+    border-radius: 10px;
 }
 
 .contacto-container form input{
@@ -253,7 +256,8 @@ a{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     background-color: rgba(255, 255, 255, .9);
-    outline: 2px solid rgb(1, 83, 1);
+    outline: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 .contacto-container form button{
@@ -262,6 +266,7 @@ a{
     outline: none;
     font-size: 16px;
     color: #fff;
+    text-decoration: underline;
 }
 
 .contacto-container form textarea{
@@ -273,7 +278,9 @@ a{
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     background-color: rgba(255, 255, 255, .9);
-    outline: 2px solid rgb(1, 83, 1);
+    /* outline: 2px solid rgb(1, 83, 1); */
+    outline: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 .contacto-redes{
@@ -480,6 +487,10 @@ a{
     .contacto-container form input,.contacto-container form textarea{
         font-size: 13px;
     }
+
+    .portada__title{
+        font-size: 30px;
+    }
     
   }
 
@@ -488,4 +499,5 @@ a{
         font-size: 12px;
         font-weight: 700;
     }
+
 }
