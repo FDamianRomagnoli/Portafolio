@@ -28,6 +28,15 @@
     background-image: url("../src/portada-tablet.png");
 }
 
-@media (min-width: 600px) {
-   
+
+
+@media (min-width: 700px) {
+    .portafolio-container{
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
 }
