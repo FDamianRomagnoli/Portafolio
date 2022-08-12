@@ -4,7 +4,9 @@ const btnNav1 = document.querySelector(".nav-sobremi");
 const btnNav2 = document.querySelector(".nav-habilidades");
 const btnNav3 = document.querySelector(".nav-portafolio");
 const btnNav4 = document.querySelector(".nav-contacto");
+const mainPortafolio = document.querySelector(".main__portafolio");
 let estado = false;
+
 
 btnNav.addEventListener("click",() =>{
     estado = !estado;

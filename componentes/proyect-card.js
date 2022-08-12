@@ -166,6 +166,16 @@ class proyectCard extends HTMLElement {
             }
         }
 
+        @media (min-width: 1000px){
+            .proyect-card{
+                max-width: 400px;
+                max-height: 600px;
+            }
+
+            :host{
+                max-width: 500px;
+            }
+        }
 
         `;
     }

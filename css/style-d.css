@@ -1,0 +1,97 @@
+.sobremi-container{
+    flex-direction: row;
+    gap: 80px;
+    margin: 0 200px;
+}
+
+
+.sobremi-foto{
+    max-width: none;
+    min-width: 300px;
+    width: 300px;
+    align-self: center;
+}
+
+.sobremi-container p{
+    align-self: center;
+}
+
+.separador{
+    height: 180px;
+    font-size: 36px;
+}
+
+.separador p{
+    padding-top: 80px;
+}
+
+.main__portada{
+    background-image: url('/src/portada-desktop.png');
+    max-height: 1200px;
+}
+
+.portada__title{
+    position: absolute;
+    font-size: 68px;
+    left: 50px;
+    top: 50px;
+    max-width: 500px;
+    height: auto;
+    line-height: 70px;
+    text-align:left;
+}
+
+.contacto-container{
+    max-width: 1100px;
+    margin: 0 20px;
+    padding-bottom: 50px;
+
+}
+
+.contacto-redes__fondo{
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    height: 763px;
+    left: 40%;
+    background-image: url('/src/prueba.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+.contacto-github{
+    height: 70px;
+    width: 65px;
+}
+
+.contacto-linkedin{
+    height: 70px;
+    width: 65px;
+}
+
+.main__contacto{
+    
+}
+
+.contacto-redes__container{
+    align-self: flex-start;
+}
+
+.contacto-container form{
+    max-width: 600px;
+}
+
+.contacto-container form input{
+    padding: 10px;
+}
+
+.contacto-container form textarea{
+    padding: 10px;
+    height: 450px;
+}
+
+@media (min-width: 1180px){
+    .main__portada{
+        background-image: url('/src/portada-desktophd.png');
+    }
+}
