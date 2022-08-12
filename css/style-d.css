@@ -26,7 +26,7 @@
 }
 
 .main__portada{
-    background-image: url('/src/portada-desktop.png');
+    background-image: url('../src/portada-desktop.png');
     max-height: 1200px;
 }
 
@@ -54,7 +54,7 @@
     width: 60%;
     height: 763px;
     left: 40%;
-    background-image: url('/src/prueba.png');
+    background-image: url('../src/prueba.png');
     background-size: cover;
     z-index: -1;
 }
@@ -92,6 +92,6 @@
 
 @media (min-width: 1180px){
     .main__portada{
-        background-image: url('/src/portada-desktophd.png');
+        background-image: url('../src/portada-desktophd.png');
     }
 }
