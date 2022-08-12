@@ -12,3 +12,6 @@ v1.0.2:
 v1.0.3:
 - Tarjeta de los proyectos del portafolio mejorada + funcion de boton "visitar"
 - Diseño Responsive de las tarjetas
+
+v1.0.4:
+-Arreglado bug overflox-x debido al footer.
