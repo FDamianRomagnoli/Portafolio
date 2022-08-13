@@ -117,7 +117,7 @@ class proyectCard extends HTMLElement {
             position: absolute;
             left: calc( 50% - 75px );
             bottom: 10px;
-            background: #0E0E0E;
+            background: #111;
             border-radius: 20px;
             outline: none;
             height: 35px;

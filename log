@@ -17,3 +17,10 @@ v1.0.4:
 -Arreglado bug overflox-x debido al footer.
 - Agregando responsividad al sitio
 - Arreglando Errores visuales
+
+v1.1.0:
+- Diseño responsivo final
+- Arreglado bugs visuales de portafolio
+- Fondo de relleno de contactos añadida
+- Fondo HD desktop
+- Navegador desktop añadido con exito
