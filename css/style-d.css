@@ -1,20 +1,4 @@
-.sobremi-container{
-    flex-direction: row;
-    gap: 80px;
-    margin: 0 200px;
-}
 
-
-.sobremi-foto{
-    max-width: none;
-    min-width: 300px;
-    width: 300px;
-    align-self: center;
-}
-
-.sobremi-container p{
-    align-self: center;
-}
 
 .separador{
     height: 180px;
@@ -52,7 +36,7 @@
     display: inline-block;
     position: absolute;
     width: 60%;
-    height: 763px;
+    height: 613px;
     left: 40%;
     background-image: url('../src/prueba.png');
     background-size: cover;
@@ -69,8 +53,13 @@
     width: 65px;
 }
 
-.main__contacto{
-    
+.header__nav,.header__nav-button-container{
+    display: none;
+}
+
+
+.header__nav-desktop{
+    display: inline-block;
 }
 
 .contacto-redes__container{
@@ -87,11 +76,86 @@
 
 .contacto-container form textarea{
     padding: 10px;
-    height: 450px;
+    height: 300px;
+}
+
+header{
+    height: 80px;
+}
+
+.header__logo{
+    width: 70px;
+    height: 70px;
+    top: calc( 50% - 26px );
+}
+
+.header__nav-desktop{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    height: 100%;
+}
+
+.nav-sobremi-d:hover,.nav-habilidades-d:hover,.nav-portafolio-d:hover,.nav-contacto-d:hover{
+    cursor:pointer;
+}
+
+.main__contacto,.main__portafolio,.main__habilidades,.main__sobremi{
+    padding-top: 80px;
+}
+
+.sobremi-container,.habilidades__table,.portafolio-container{
+    margin-top: 80px;
+}
+
+.header__nav-list-d{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-self: center;
+}
+
+.header__nav-list-d li{
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px #000;
+}
+.main__portada{
+    margin-top: 80px;
+}
+
+.sobremi-container{
+        flex-direction: row;
+        gap: 80px;
+    }
+    
+    
+.sobremi-foto{
+        max-width: none;
+        min-width: 300px;
+        width: 300px;
+        align-self: center;
+    }
+    
+.sobremi-container p{
+        align-self: center;
 }
 
 @media (min-width: 1180px){
     .main__portada{
         background-image: url('../src/portada-desktophd.png');
+    }
+
+    .sobremi-container{
+        margin: 0 50px;
+        margin-top: 80px;
+    }
+
+}
+
+@media (min-width: 1400px){
+    .sobremi-container{
+        margin: 0 200px;
+        margin-top: 80px;
     }
 }

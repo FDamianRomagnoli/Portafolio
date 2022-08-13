@@ -60,6 +60,10 @@ header{
     display: none;
 }
 
+.header__nav-desktop{
+    display: none;
+}
+
 .main__portada{
     display: flex;
     position: relative;
@@ -137,7 +141,7 @@ header{
     background-color: #fff;
     box-shadow: 0px 0px 4px 0px #000;
     border-radius: 50px;
-    background-image: url('/src/mifoto.png');
+    background-image: url('../src/mifoto.png');
     background-position: center;
     background-size: cover;
 }

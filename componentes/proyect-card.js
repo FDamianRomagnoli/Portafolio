@@ -162,18 +162,18 @@ class proyectCard extends HTMLElement {
         @media (min-width: 700px){
             :host{
                 display: inline-block;
-                max-width: 320px;
+                width: 320px;
             }
         }
-
         @media (min-width: 1000px){
-            .proyect-card{
-                max-width: 400px;
-                max-height: 600px;
+            :host{
+                width: 400px;
+                height: 600px;
             }
 
-            :host{
-                max-width: 500px;
+            .proyect-card{
+                max-height: 600px;
+                max-width: 400px;
             }
         }
 

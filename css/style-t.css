@@ -45,7 +45,6 @@
 @media (min-width: 700px) {
     .portafolio-container{
         width: 90%;
-        margin: 0 auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
