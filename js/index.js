@@ -9,6 +9,9 @@ const btnNav2_d = document.querySelector(".nav-habilidades-d");
 const btnNav3_d = document.querySelector(".nav-portafolio-d");
 const btnNav4_d = document.querySelector(".nav-contacto-d");
 
+const footerGit = document.querySelector(".footer__redes-github");
+const footerLinkedin = document.querySelector(".footer__redes-linkedin");
+
 const logoFooter = document.querySelector(".footer__logo");
 const logoHeader = document.querySelector(".header__logo");
 
@@ -19,6 +22,12 @@ function goToIndex(){
     location.href = "#";
 }
 
+footerGit.addEventListener("click", () =>{
+    window.open("https://github.com/FDamianRomagnoli","_blank");
+});
+footerLinkedin.addEventListener("click", () =>{
+    window.open("https://www.linkedin.com/in/francorm/","_blank");
+});
 
 const mainPortafolio = document.querySelector(".main__portafolio");
 let estado = false;
