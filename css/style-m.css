@@ -210,6 +210,8 @@ header{
         height: 170px;
         background-color: rgba(0, 0, 0, .9);
         z-index: 0;
+        border-top: 2px solid #000000;
+        margin: 0 auto;
     }
 
     .copyright{
@@ -298,6 +300,65 @@ header{
         width: 30px;
     }
 
+    @media (min-width: 350px){
+
+        .footer__nav a{
+            font-size: 15px;
+        }
+        .footer__redes-github{
+            height: 34px;
+            width: 33px;
+        }
+    
+        .footer__redes-linkedin{
+            height: 39px;
+            width: 33px;
+        }
+
+        .footer__logo{
+            top: 20px;
+            left: 10px;
+            width: 67px;
+            height: 60px;
+        }
+    }
+
+    @media (min-width: 500px){
+    
+        .footer__links{
+            height: 200px;
+        }
+
+        .footer__copyright{
+            font-size: 13px;
+        }
+    
+        .footer__marca{
+            letter-spacing: 1.5px;
+            font-size: 11.5px;
+        }
+    
+        .footer__logo{
+            top: 20px;
+            left: 10px;
+            width: 77px;
+            height: 70px;
+        }
+    
+        .footer__nav a{
+            font-size: 16px;
+        }
+    
+        .footer__redes-github{
+            height: 41px;
+            width: 40px;
+        }
+    
+        .footer__redes-linkedin{
+            height: 46px;
+            width: 40px;
+        }
+    }
 /* FIN ESTILO FOOTER */
 
 
