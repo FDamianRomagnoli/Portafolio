@@ -141,6 +141,60 @@ header{
         align-self: center;
 }
 
+/* FOOTER DESKTOP */
+
+.footer__links{
+    height: 150px;
+}
+
+.footer__copyright{
+    font-size: 13px;
+    position: absolute;
+    left: 15px;
+}
+
+.footer__marca{
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    right: 15px;
+}
+
+.footer__logo{
+    top: 36px;
+    left: 15px;
+    width: 87px;
+    height: 80px;
+}
+
+.footer__nav a{
+    font-size: 16px;
+}
+
+.footer__redes li:hover{
+    cursor: pointer;
+}
+
+.footer__redes{
+    width: 98%;
+    bottom: -60px;
+    gap: 35px;
+    justify-content: flex-end;
+}
+
+.footer__nav{
+    position: absolute;
+    right: 20px;
+    flex-direction: row;
+    gap: 80px;
+    padding-top: 20px;
+}
+
+.footer__nav a{
+    font-size: 18px;
+}
+
+/* FIN FOOTER DESKTOP */
+
 @media (min-width: 1180px){
     .main__portada{
         background-image: url('../src/portada-desktophd.png');
