@@ -78,7 +78,7 @@ class skillItem extends HTMLElement{
             position: absolute;
             left: calc( ${this.percentage}% - 33px );
             top: -32px;
-            background-image: url('../src/skill_p.svg');
+            background-image: url('src/skill_p.svg');
             background-size: contain;
             background-repeat: no-repeat;
             font-size: 12px;
