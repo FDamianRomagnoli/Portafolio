@@ -130,6 +130,10 @@ class proyectCard extends HTMLElement {
             font-weight: 700;
         }
 
+        .proyect-card__button:hover{
+            cursor: pointer;
+        }
+
         @media (min-width: 310px){
             .proyect-card{
                 height: calc( 80vw * 1.5 );

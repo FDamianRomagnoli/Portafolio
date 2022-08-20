@@ -44,3 +44,8 @@ v1.1.5:
 - Agregado componente skill-item
 - Agregado componente bar-circle
 
+v1.1.6:
+- Arreglo errores visuales de la barra de habilidades
+- Agregado efecto hover de la barra de habilidades
+- Arreglado bug de redirección del formulario
+- Agregado espaciado para la barra circular de las habilidades

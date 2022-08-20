@@ -52,7 +52,7 @@ class skillItem extends HTMLElement{
             font-weight: 800;  
             letter-spacing: 1.8px;
             margin-bottom: 4px;
-            max-width: 120px;
+            max-width: 135px;
         }
 
         .skill-bar{
@@ -85,7 +85,7 @@ class skillItem extends HTMLElement{
             font-weight: 800;
             text-align: center;
             padding-top: 3.3px;
-            text-shadow: 1px 1px 2px #222;
+            text-shadow: .2px 0px 0px #222;
             color: #222;
 
         }
