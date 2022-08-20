@@ -37,5 +37,10 @@ v1.1.3:
 - Información sobre mi agregada.
 
 v1.1.4:
--
+- Removido seccion de habilidades temporalmente
+
+v1.1.5:
+- Nuevo diseño para la seccion de habilidades
+- Agregado componente skill-item
+- Agregado componente bar-circle
 

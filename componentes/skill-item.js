@@ -19,9 +19,12 @@ class skillItem extends HTMLElement{
 
         template.innerHTML = `
             <div class="skill">
-                <p class="skill-steel">${this.steel}</p>
-                <div class= "skill-bar">
-                    <div class= "skill-bar__percentage"> </div>
+                <p class="skill-name">
+                    ${this.steel}
+                </p>
+                <div class="skill-bar">
+                    <span class="skill-p">${this.percentage}%</span>
+                    <div class="skill-bar_fill"></div>
                 </div>
             
             </div>
@@ -42,59 +45,71 @@ class skillItem extends HTMLElement{
             box-sizing:border-box;
         }
 
-        :host{
-            min-width: 200px;
-            height: 30px;
-        }
-
-        .skill{
-            display: flex;
-        }
-
-        .skill-steel{
-            display: inline-block;
-            height: 30px;
-            width: 25%;
-            font-weight: 800;
-            text-align: center;
-            vertical-align: middle;
-            font-family: 'Raleway', sans-serif;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 0%, rgba(0, 0, 0, 0.48) 100%);
+        .skill-name{
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.64) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 15px;
-            padding-top: 4px;
+            font-weight: 800;  
+            letter-spacing: 1.8px;
+            margin-bottom: 4px;
+            max-width: 120px;
         }
 
         .skill-bar{
-            justify-self: flex-end;
-            display: inline-block;
-            margin-left: 5px;
-            width: 60%;
-            min-width: 70px;
-            height: 25px;
-            border-radius: 5px;
-            box-shadow: 0px 2px 5px .2px rgba(0,0,0,.9);
-            background-color: #ECECEC;
+            position: relative;
+            width: 100%;
+            height: 14px;
+            background-color: #F4F4F4;
+            box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.35);
         }
 
-        .skill-bar__percentage{
+        .skill-bar_fill{
+            position: absolute;
+            left: 0;
+            background-color: #AB2E2E;
+            border: 1px solid #AB2E2E;
+            height: 14px;
             width: ${this.percentage}%;
-            background: linear-gradient(90deg, #5182A6 0%, rgba(81, 130, 166, 0.53) 100%);
-            height: 100%;
-            border-radius: 5px 0px 0px 5px;
         }
 
-        @media (min-width: 300px){
-            .skill-steel{
-                font-size: 20px;
-                padding-top: 6.5px;
-            }
+        .skill-p{
+            width: 33px;
+            height: 53px;
+            position: absolute;
+            left: calc( ${this.percentage}% - 33px );
+            top: -32px;
+            background-image: url('../src/skill_p.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-size: 12px;
+            font-weight: 800;
+            text-align: center;
+            padding-top: 3.3px;
+            text-shadow: 1px 1px 2px #222;
+            color: #222;
 
-            .skill-bar{
-                height: 35px;
+        }
+
+        @media (min-width: 280px){
+            .skill-name{
+                font-size: calc(3vw + 2vmin);
+                letter-spacing: 1px;
             }
         }
+
+        @media (min-width: 320px){
+            .skill-name{
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 500px){
+            .skill-name{
+                max-width: none;
+            }
+        }
+
+        
 
         `;
     }

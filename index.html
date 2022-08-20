@@ -68,11 +68,41 @@
                 <p>HABILIDADES</p>
             </div>
 
-            <div class="habilidades__table">
-                <ul class="habilidades__table-list">
-                    <li><skill-item steel="HTML" percentage="70"></skill-item></li>
-                </ul>
-            </div>
+            <section class="habilidades-container">
+
+                <div class="habilidades__card">
+                    <h2>TECNOLOGIA</h2>
+                    <ul class="habilidades__tecnologia-list">
+                        <li><skill-item steel="HTML" percentage="65"></skill-item></li>
+                        <li><skill-item steel="CSS" percentage="70"></skill-item></li>
+                        <li><skill-item steel="JavaScript" percentage="60"></skill-item></li>
+                        <li><skill-item steel="SQL" percentage="60"></skill-item></li>
+                        <li><skill-item steel="React.js" percentage="45"></skill-item></li>
+                    </ul>
+                    <div class="circle-container">
+                        <bar-circle percentage="75"></bar-circle>
+                    </div>
+                    
+                </div>
+
+                <div class="habilidades__card">
+                    <h2>HABILIDADES BLANDAS</h2>
+                    <ul class="habilidades__tecnologia-list">
+                        <li><skill-item steel="Resolución de problemas" percentage="70"></skill-item></li>
+                        <li><skill-item steel="Adaptabilidad" percentage="70"></skill-item></li>
+                        <li><skill-item steel="Autonomia" percentage="60"></skill-item></li>
+                        <li><skill-item steel="Comunicación" percentage="60"></skill-item></li>
+                        <li><skill-item steel="Responsabilidad" percentage="100"></skill-item></li>
+                    </ul>
+                    <div class="circle-container">
+                        <bar-circle percentage="70"></bar-circle>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            
         </section>
 
         <section class="main__portafolio" id="portafolio">
@@ -167,6 +197,8 @@
     <script type="module" src="componentes/proyect-card.js"></script>
 
     <script type="module" src="componentes/skill-item.js"></script>
+
+    <script type="module" src="componentes/bar-circle.js"></script>
     
 </body>
 </html>

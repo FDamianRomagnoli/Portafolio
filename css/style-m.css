@@ -337,38 +337,65 @@ a{
     color: #000;
 }
 
-/* .habilidades__table{
-    margin: 30px 30px 0px 30px;
-}
+/* ESTILO HABILIDADES */
 
-.habilidades__table-list{
-    display: flex;
-    box-shadow: 0px 0px 4px 0px #000;
-    width: 100%;
-    height: auto;
-    gap: 20px;
-    flex-direction: column;
-    padding: 20px 15px;
-    max-width: 300px;
-    margin: 0 auto;
-}
 
-.habilidades__table-list li{
-    font-weight: 800;
-}
+    .habilidades__card{
+        position: relative;
+        max-width: 450px;
+        height: 700px;
+        background: #222222;
+        box-shadow: 0px 0px 2px 0px rgb(0, 0, 0);     
+        padding: 20px 20px;
+        margin: 18px;
+        margin-bottom: 40px;
+    }
 
-.habilidades__table-list div{
-    display: inline-block;
-    position: relative;
-    top: 4px;
-    margin-left: 10px;
-    box-shadow: 0px 0px 4px 0px #000;
-    border: 1px solid #000;
-    width: 70%;
-    height: 20px;
-    background: linear-gradient(90deg, rgb(1, 83, 1) 80%, rgb(255, 255, 255) 0%);
-} */
+    .habilidades__card h2{
+        color: #f2f2f2;
+        font-size: 27px;
+        letter-spacing: 1.3px;
+        -webkit-text-stroke: 1px #f2f2f2;
+        text-align: center;
+        margin: 10px 5px;
+        margin-bottom: 40px;
+    }
 
+    .habilidades__card li{
+        margin: 20px 0;
+    }
+
+    .circle-container{
+        position: absolute;
+        bottom: 30px;
+        left: calc( 50% - 100px );
+    }
+
+    @media (min-width: 487px) {
+        .habilidades__card{
+            position: relative;
+            left: calc( 50% - 230px );
+        }
+    }
+
+    @media (min-width: 1080px){
+        .habilidades-container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 450px 450px ;
+            gap: 30px;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1150px){
+        .habilidades-container{
+            gap: 70px;
+            grid-template-columns: 500px 500px ;
+        }
+    }
+
+/* FIN ESTILO HABILIDADES */
 
 .portafolio-container{
     width: 80%;
