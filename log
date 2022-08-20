@@ -49,3 +49,4 @@ v1.1.6:
 - Agregado efecto hover de la barra de habilidades
 - Arreglado bug de redirección del formulario
 - Agregado espaciado para la barra circular de las habilidades
+- Quitado texto sombreado evidente de la barra de habilidades
