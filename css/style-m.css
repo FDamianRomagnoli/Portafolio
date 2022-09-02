@@ -388,22 +388,16 @@ a{
         margin: 20px 0;
     }
 
-    .circle-container{
-        position: absolute;
-        bottom: 30px;
-        left: calc( 50% - 100px );
-    }
-
     .habilidades__tecnologia-list{
-        padding-bottom: 250px;
+        padding-bottom: 25px;
     }
 
-    @media (min-width: 487px) {
+    /* @media (min-width: 487px) {
         .habilidades__card{
             position: relative;
             left: calc( 50% - 230px );
         }
-    }
+    } */
 
     @media (min-width: 1080px){
         .habilidades-container{

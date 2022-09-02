@@ -8,12 +8,21 @@
     padding-top: 140px;
 }
 
-.portada__title{
-    font-size: 45px;
+.portada-title{
+    max-width: 400px;
+}
+
+.portada-bienvenida{
+    font-size: 30px;
+}
+
+.portada-soy{
+    font-size: 44px;
+    width: 100%;
 }
 
 .main__portada{
-    background-image: url("../src/portada-tablet.png");
+    background-image: url("../img/portada-tablet.png");
 }
 
 .sobremi-foto{
@@ -22,9 +31,22 @@
     margin: 0 auto;
 }
 
-.sobremi-container p{
-    font-size: 19px;
+.habilidades-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.habilidades__card{
+    width: 400px;
+    position: static;
+    margin: 20px;
+}
+
+/* .habilidades-title,.portafolio-title,.contacto-title{
+    text-align: start;
+    padding-left: 25px;
+} */
 
 .contacto-correo p,.contacto-tel p{
     font-size: 18px;
@@ -40,3 +62,16 @@
     }
 
 }
+
+@media (min-width: 880px) {
+
+    .habilidades__card:first-child{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
