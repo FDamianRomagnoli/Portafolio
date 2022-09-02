@@ -119,3 +119,19 @@ function visitarProyecto(url){
     window.open(url,"_blank");
 }
 
+cargarPortafolio();
+
+
+function cargarPortafolio(){
+    fetch("/json/portafolio.json")
+    .then(response => {
+            return response.json();
+        })
+    .then(data => {
+        cargarHTMLProyecto(data);
+    })
+} 
+
+function cargarHTMLProyecto(lista){
+    console.log(lista);
+}

@@ -445,6 +445,28 @@ a{
     box-shadow: 0px 0px 4px 0px #000;
 }
 
+.btnAtras,.btnSiguiente{
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.portafolio-selector{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.portafolio-counter{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 /* FIN SECCION PORTAFOLIO */
 
 /* SECCION CONTACTO */
