@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/style-m.css">
     <link rel="stylesheet" href="css/style-t.css" media="(min-width: 500px)">
     <link rel="stylesheet" href="css/style-d.css" media="(min-width: 1000px)">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <span class="header__logo"></span>
+        <p class="header__logo">FDamianRomagnoli</p>
         <div class="header__nav-button-container">
            <i class="header__nav-button"></i> 
         </div> 
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="nav-sobremi"><i></i>SOBRE MI</li>
-                <li class="nav-habilidades"><i></i>HABILIDADES</li>
-                <li class="nav-portafolio"><i></i>PORTAFOLIO</li>
-                <li class="nav-contacto"><i></i>CONTACTO</li>
-            </ul>
-            <div class="contacto-redes">
-                <a href="https://github.com/FDamianRomagnoli" target="_blank"><span class="contacto-github"></span></a>
-                <a href="https://www.linkedin.com/in/francorm/" target="_blank"><span class="contacto-linkedin"></span></a>
+        <nav class="header__nav-mobile">
+
+            <div class="portada-redes">
+                <span class="portada-redes-linkedin"></span>
+                <span class="portada-redes-github"></span>
             </div>
+
+            <ul class="header__nav-list">
+                <li class="nav-sobremi"><i></i>Sobre mi</li>
+                <li class="nav-habilidades"><i></i>Habilidades</li>
+                <li class="nav-portafolio"><i></i>Portafolio</li>
+                <li class="nav-contacto"><i></i>Contacto</li>
+            </ul>
+
         </nav>
         <nav class="header__nav-desktop">
             <ul class="header__nav-list-d">
@@ -40,17 +44,30 @@
 
     <main>
         <section class="main__portada">
-            <p class="portada__title">BIENVENIDOS A MI SITIO</p>
+            <div class="portada-title">
+                <p class="portada-bienvenida">BIENVENIDO A MI PÁGINA!</p>
+                <p class="portada-soy">Soy un desarrollador web</p>
+                <button class="portada-cv">Hoja de vida</button>
+                <div class="portada-redes">
+                    <span class="portada-redes-linkedin" fill="blue"></span>
+                    <span class="portada-redes-github"></span>
+                </div>
+            </div>
             <p class="portada__autor">Franco D. Romagnoli</p>
         </section>
 
-        <section class="main__sobremi" id="sobremi">
-            <div class="separador">
-                <p>SOBRE MI</p>
-            </div>
+        <div class="separador"></div>
+
+        <div class="indexeado" id="sobremi"></div>
+
+        <section class="main__sobremi">
+            
+            <div class="sobremi-foto"></div>
+
             <div class="sobremi-container">
-                <div class="sobremi-foto"></div>
-                <p>Hola, bienvenid@ a mi pagina web :), Me llamo Franco, tengo 23 años y soy <b>Programador</b>.<br><br>
+                
+                <p class="title">SOBRE MI</p>
+                <p class="sobremi-related">Hola, bienvenid@ a mi pagina web, Me llamo Franco, tengo 23 años y soy <b>Desarrollador</b>.<br><br>
  
                     Me considero una persona proactiva ,responsable y orientada a resultados,mi meta es crecer profesionalmente.<br><br>
                      
@@ -59,14 +76,17 @@
                     Me recibí como técnico electrónico en 2019 y me he dedicado a estudiar de forma autodidacta hasta la fecha.<br><br>
                      
                     También cursé 2 años Ing en sistemas donde aprendí algoritmos, estructuras de datos y diversos paradigmas de programación.<br>
-                    </p>
+                </p>
             </div>     
         </section>
 
-        <section class="main__habilidades" id="habilidades">
-            <div class="separador" >
-                <p>HABILIDADES</p>
-            </div>
+        <div class="separador"></div>
+
+        <div class="indexeado" id="habilidades"></div>
+
+        <section class="main__habilidades">
+
+            <p class="title habilidades-title">HABILIDADES</p>
 
             <section class="habilidades-container">
 
@@ -105,67 +125,74 @@
             
         </section>
 
-        <section class="main__portafolio" id="portafolio">
-            <div class="separador" >
-                <p>PORTAFOLIO</p>
-            </div>
+        <div class="indexeado" id="portafolio"></div>
+
+        <section class="main__portafolio">
+            <p class="title habilidades-title portafolio-title">PORTAFOLIO</p>
             <div class="portafolio-container">
 
                 <proyect-card 
                 title="MI PORTAFOLIO" 
-                image="src/portada-tablet.png" 
+                image="img/portada-tablet.png" 
                 description="Proyecto de pagina de Landing page tipo portafolio donde expongo mis datos, proyectos y formas de contacto."
-                url="https://fdamianromagnoli.github.io/Portafolio/"
-                ></proyect-card>
-
-                <proyect-card 
-                title="PROXIMAMENTE" 
-                image="src/portada-tablet.png" 
-                description="Vacio."
-                url="https://fdamianromagnoli.github.io/Portafolio/"
-                ></proyect-card>
-
-                <proyect-card 
-                title="PROXIMAMENTE" 
-                image="src/portada-tablet.png" 
-                description="Vacio."
                 url="https://fdamianromagnoli.github.io/Portafolio/"
                 ></proyect-card>
 
             </div>
         </section>
 
-        <section class="main__contacto" id="contacto">
-            <div class="separador" >
-                <p>CONTACTO</p>
-            </div>
+        <div class="indexeado" id="contacto"></div>
+
+        <section class="main__contacto">
+
+            <p class="title contacto-title">CONTACTO</p>
+
             <div class="contacto-container">
+
                 <form action="https://formsubmit.co/fdamianromagnoli@gmail.com" method="POST">
-                    <input type="text" placeholder="¿Cual es tu nombre?" name="name">
-                    <input type="text" placeholder="¿Tu correo electronico?" name="email">
-                    <input type="text" placeholder="Asunto" name="subject">
-                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">ENVIAR</button>
+
+                    <div class="agrupacion">
+                        <label for="name">Ingrese su nombre</label>
+                        <input type="text" placeholder="Jose" name="name">
+                    </div>
+
+                    <div class="agrupacion">
+                        <label for="email">Ingrese su correo electronico</label>
+                        <input type="text" placeholder="ejemplo@gmail.com" name="email">
+                    </div>
+
+                    <div class="agrupacion">
+                        <label for="subject">Asunto</label>
+                        <input type="text" placeholder="Ejemplo: Consulta, Entrevista, etc..." name="subject">
+                    </div>
+
+                    <div class="agrupacion">
+                        <label for="comments">Mensaje</label>
+                        <textarea name="comments" id="" cols="30" rows="10" placeholder="Hola, Buenas tardes mi nombre es ..."></textarea>
+                    </div>
+                    
+                    <button type="submit">Enviar</button>
                     <input type="hidden" name="_next" value="https://fdamianromagnoli.github.io/Portafolio/#contacto">
                     <input type="hidden" name="_captcha" value="false">
                 </form>
                 
                 <div class="contacto-redes__container">
-                    <div class="contacto-redes">
-                    <a href="https://github.com/FDamianRomagnoli" target="_blank"><span class="contacto-github"></span></a>
-                    <a href="https://www.linkedin.com/in/francorm/" target="_blank"><span class="contacto-linkedin"></span></a>
+                    <p class="title redes-title">Redes Sociales</p>
+                    <div class="portada-redes">
+                        <span class="portada-redes-linkedin" fill="blue"></span>
+                        <span class="portada-redes-github"></span>
                     </div>
+
                     <div class="contacto-tel">
-                    <span></span>
-                    <p>+54 11 68785358</p>
+                        <span></span>
+                        <p>+54 11 68785358</p>
                     </div>
+
                     <div class="contacto-correo">
-                    <span></span>
-                    <p>fdamianromagnoli@gmail.com</p>
+                        <span></span>
+                        <p>fdamianromagnoli@gmail.com</p>
                     </div>
                 </div>
-
-                <div class="contacto-redes__fondo"></div>
                 
             </div>
         </section>
@@ -173,22 +200,8 @@
 
     <footer>
 
-        <section class="footer__links">
-            <span class="footer__logo"></span>
-            <ul class="footer__nav">
-                <li><a href="#sobremi">SOBRE MI</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-                <li><a href="#portafolio">PORTAFOLIO</a></li>
-            </ul>
-            <p class="footer__marca">Franco D. Romagnoli</p>
-            <ul class="footer__redes">
-                <li><span class="footer__redes-github"></span></li>
-                <li><span class="footer__redes-linkedin"></span></li>
-            </ul>
-        </section>
-
         <section class="copyright">
-            <p class="footer__copyright">@2022 Todos Los Derechos Reservados</p>
+            <p class="footer__copyright">@2022 Todos Los <font color="#D72828">Derechos</font> Reservados</p>
         </section>
     </footer>
 

@@ -1,5 +1,5 @@
 const btnNav = document.querySelector(".header__nav-button");
-const menu = document.querySelector(".header__nav");
+const menu = document.querySelector(".header__nav-mobile");
 const btnNav1 = document.querySelector(".nav-sobremi");
 const btnNav2 = document.querySelector(".nav-habilidades");
 const btnNav3 = document.querySelector(".nav-portafolio");
@@ -9,25 +9,39 @@ const btnNav2_d = document.querySelector(".nav-habilidades-d");
 const btnNav3_d = document.querySelector(".nav-portafolio-d");
 const btnNav4_d = document.querySelector(".nav-contacto-d");
 
-const footerGit = document.querySelector(".footer__redes-github");
-const footerLinkedin = document.querySelector(".footer__redes-linkedin");
+const btnLinkedin = document.querySelectorAll(".portada-redes-linkedin");
+const btnGithub = document.querySelectorAll(".portada-redes-github");
 
-const logoFooter = document.querySelector(".footer__logo");
 const logoHeader = document.querySelector(".header__logo");
 
-logoFooter.addEventListener("click", goToIndex);
+btnGithub.forEach(element => {
+    element.addEventListener("click", () =>{
+        setTimeout(()=>{
+            visitarProyecto('https://github.com/FDamianRomagnoli');
+            estado = false;
+            efectoMenu(estado);
+        },800);
+        
+    });
+});
+
+btnLinkedin.forEach(element => {
+    element.addEventListener("click", () =>{
+        setTimeout(()=>{
+            visitarProyecto('https://www.linkedin.com/in/francorm/');
+            estado = false;
+            efectoMenu(estado);
+        },800);
+        
+    });
+});
+
+
 logoHeader.addEventListener("click", goToIndex);
 
 function goToIndex(){
     location.href = "#";
 }
-
-footerGit.addEventListener("click", () =>{
-    window.open("https://github.com/FDamianRomagnoli","_blank");
-});
-footerLinkedin.addEventListener("click", () =>{
-    window.open("https://www.linkedin.com/in/francorm/","_blank");
-});
 
 const mainPortafolio = document.querySelector(".main__portafolio");
 let estado = false;
@@ -40,10 +54,25 @@ btnNav.addEventListener("click",() =>{
 
 function efectoMenu(b){
     if(b){
-        menu.style.display = "block";
+        menu.style.right = "1px"
+        animationButton(btnNav,"url(../img/bar-x.svg)");
+        
     }else{
-        menu.style.display = "none";
+        menu.style.right = "-1000px"
+        animationButton(btnNav,"url(../img/bar.svg)" )
     }
+}
+
+function animationButton(btn,url){
+    btn.style.animationTimingFunction = 'lineal';
+    btn.style.animation = 'navButton';
+    btn.style.animationDuration = '.5s';
+    setTimeout(()=>{
+        btn.style.backgroundImage = url;
+    },250);
+    setTimeout(() =>{
+        btn.style.animation = 'none';
+    },500);
 }
 
 btnNav1.addEventListener("click",() =>{
