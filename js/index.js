@@ -55,11 +55,11 @@ btnNav.addEventListener("click",() =>{
 function efectoMenu(b){
     if(b){
         menu.style.right = "1px"
-        animationButton(btnNav,"url(../img/bar-x.svg)");
+        animationButton(btnNav,"url(./img/bar-x.svg)");
         
     }else{
         menu.style.right = "-1000px"
-        animationButton(btnNav,"url(../img/bar.svg)" )
+        animationButton(btnNav,"url(./img/bar.svg)" )
     }
 }
 
