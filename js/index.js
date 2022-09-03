@@ -8,6 +8,7 @@ const btnNav1_d = document.querySelector(".nav-sobremi-d");
 const btnNav2_d = document.querySelector(".nav-habilidades-d");
 const btnNav3_d = document.querySelector(".nav-portafolio-d");
 const btnNav4_d = document.querySelector(".nav-contacto-d");
+const btnDownloadPdf = document.querySelector(".portada-cv");
 
 const btnLinkedin = document.querySelectorAll(".portada-redes-linkedin");
 const btnGithub = document.querySelectorAll(".portada-redes-github");
@@ -115,23 +116,11 @@ btnNav4_d.addEventListener("click",() =>{
     location.href = "#contacto";
 });
 
+btnDownloadPdf.addEventListener("click", () =>{
+    window.open('./CV.pdf',"_blank");
+})
+
 function visitarProyecto(url){
     window.open(url,"_blank");
 }
 
-cargarPortafolio();
-
-
-function cargarPortafolio(){
-    fetch("/json/portafolio.json")
-    .then(response => {
-            return response.json();
-        })
-    .then(data => {
-        cargarHTMLProyecto(data);
-    })
-} 
-
-function cargarHTMLProyecto(lista){
-    console.log(lista);
-}

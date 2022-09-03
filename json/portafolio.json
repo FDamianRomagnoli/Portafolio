@@ -3,7 +3,12 @@
         "name": "Portafolio",
         "produccion": 2022,
         "herramientas": ["HTML","CSS","JavaScript","JSON"],
-        "descripcion": "descripcion del proyecto"
+        "descripcion": "lorem"
+    },
+    {
+        "name": "Portafolio",
+        "produccion": 2022,
+        "herramientas": ["HTML","CSS","JavaScript","JSON"],
+        "descripcion": "lorem"
     }
-
 ]

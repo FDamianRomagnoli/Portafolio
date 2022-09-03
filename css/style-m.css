@@ -26,7 +26,7 @@ header{
     z-index: 10;
     height: 60px;
     background-color: #050505;
-    box-shadow: 0px 0px 4px 0px #050505;
+    box-shadow: 0px 0px 1px 1px #6d6d6d;
 }
 
 .header__logo{
@@ -108,20 +108,7 @@ header{
     gap: 60px;
     align-self: center;
     margin: 0px 20px;
-    max-width: 330px;
-}
 
-.portada-bienvenida{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 28px;
-    text-align: center;
-    color: #D72828;
-    animation-name: bienvenida;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: 2s;
 }
 
 .portada-soy{
@@ -133,6 +120,7 @@ header{
     animation-name: quiensoy;
     animation-iteration-count: 1;
     animation-duration: 5s;
+    animation-timing-function: linear;
     color: #FFFFFF;
 }
 
@@ -198,26 +186,46 @@ header{
     background-image: url('../img/github-red.svg');
 }
 
+
+.portada-bienvenida{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #D72828;
+    animation-name: bienvenida;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    letter-spacing: 5px;
+    height: 50px;
+}
+
 @keyframes bienvenida {
     0%{
         position: relative;
         left: -100vw;
+        letter-spacing: 10px;
     }
 
     50%{
         left: 0vw;
+        letter-spacing: 8px;
     }
 
     75%{
         left: 5vw;
+        letter-spacing: 5px;
     }
 
     100%{
         position: static;
+        letter-spacing: 5px;
     }
 }
 
-@keyframes quiensoy {
+
+/* @keyframes quiensoy {
     0%{
         transform: scale(0.1);
     }
@@ -228,6 +236,16 @@ header{
 
     100%{
         transform: scale(1);
+    }
+} */
+
+@keyframes quiensoy {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
     }
 }
 
@@ -611,7 +629,7 @@ a{
 
 .header__nav-mobile{
     position: absolute;
-    top: 60.1px;
+    top: 61.8px;
     right: -1000px;
     width: 80%;
     transition: .8s;
