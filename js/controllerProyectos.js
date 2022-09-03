@@ -12,7 +12,7 @@ function main(){
 
 function selectCard(num){
 
-    fetch('../json/portafolio.json')
+    fetch('./json/portafolio.json')
         .then(response => {
             return response.json();
         })
