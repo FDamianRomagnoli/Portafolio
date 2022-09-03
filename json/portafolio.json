@@ -1,14 +1,16 @@
 [
     {
-        "name": "Portafolio",
-        "produccion": 2022,
-        "herramientas": ["HTML","CSS","JavaScript","JSON"],
-        "descripcion": "lorem"
+        "name": "Mi Portafolio",
+        "produccion": "2022",
+        "herramientas": "HTML, CSS, JavaScript, JSON.",
+        "descripcion": "Es una Web One Page, con la finalidad de que me conozcan un poco más, y poder mostrar mis trabajos/proyectos. Esta alojado en GitHub y el codigo es de acceso publico.",
+        "url": "./img/proyecto-portafolio.png"
     },
     {
-        "name": "Portafolio",
-        "produccion": 2022,
-        "herramientas": ["HTML","CSS","JavaScript","JSON"],
-        "descripcion": "lorem"
+        "name": "Proximamente",
+        "produccion": "-",
+        "herramientas": "-",
+        "descripcion": "En este espacio estara mi siguiente proyecto, muchas gracias por visitar mi sitio.",
+        "url": "./img/proyecto-vacio.png"
     }
 ]

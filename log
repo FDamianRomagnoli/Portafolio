@@ -50,3 +50,14 @@ v1.1.6:
 - Arreglado bug de redirección del formulario
 - Agregado espaciado para la barra circular de las habilidades
 - Quitado texto sombreado evidente de la barra de habilidades
+
+
+v2.0.0:
+- Nuevo diseño para mobile
+
+v2.0.1: 
+- Nuevo diseño adaptado para tablet
+- Agregado boton de CV y animaciones de la portada
+
+v2.0.2:
+- Agregado javascript controller proyect

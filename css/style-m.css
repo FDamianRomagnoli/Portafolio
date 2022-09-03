@@ -265,6 +265,7 @@ header{
     height: 100px;
     width: 100%;
     background: rgba(234, 232, 232, 0.98);
+
 }
 
 /* SECCION SOBRE MI */
@@ -453,8 +454,8 @@ a{
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 50px 0;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .proyecto{
