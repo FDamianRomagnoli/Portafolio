@@ -87,7 +87,7 @@ header{
     display: flex;
     position: relative;
     max-width: 130%;
-    height: calc( 100vh - 118px);
+    height: calc( 100vh - 115px);
     min-height: 600px;
     max-height: 1200px;
     background-image: url("../img/portada_mobile.png");
@@ -270,7 +270,11 @@ header{
 
 /* SECCION SOBRE MI */
 
-.main__sobremi,.main__habilidades{
+.main__sobremi{
+    background-color: #ededed;
+}
+
+.main__habilidades{
     /* background-image: url("../img/portada_mobile.png");
     background-size: cover;
     background-position: center; */
@@ -285,6 +289,14 @@ header{
     gap: 30px;
 }
 
+.title-sobremi{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000;
+}
+
 .title{
     font-style: normal;
     font-weight: 700;
@@ -295,14 +307,14 @@ header{
 
 .sobremi-related{
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #000;
 }
 
 .sobremi-foto{
-    width: 100%;
+    width: 70%;
     max-width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -372,68 +384,15 @@ a{
         padding-bottom: 30px;
     }
 
-    .habilidades__card:hover{
-        transform: scale(1.01);
-        transition: all .7s;
-    }
-    
-
-    .habilidades__card{
-        position: relative;
-        max-width: 450px;
-        height: auto;
-        background: #222222;
-        box-shadow: 0px 0px 4px 2px #000000;     
-        padding: 20px 20px;
-        margin: 7%;
-        margin-bottom: 40px;
+    .habilidades-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 40px;
+        width: fit-content;
     }
 
-    .habilidades__card:first-child{
-        margin-bottom: 60px;
-        margin-top: 10px;
-    }
 
-    .habilidades__card h2{
-        color: #f2f2f2;
-        font-size: 27px;
-        letter-spacing: 1.3px;
-        text-align: center;
-        margin: 10px 5px;
-        margin-bottom: 40px;
-    }
-
-    .habilidades__card li{
-        margin: 20px 0;
-    }
-
-    .habilidades__tecnologia-list{
-        padding-bottom: 25px;
-    }
-
-    /* @media (min-width: 487px) {
-        .habilidades__card{
-            position: relative;
-            left: calc( 50% - 230px );
-        }
-    } */
-
-    @media (min-width: 1080px){
-        .habilidades-container{
-            display: grid;
-            width: 100%;
-            grid-template-columns: 450px 450px ;
-            gap: 30px;
-            justify-content: center;
-        }
-    }
-
-    @media (min-width: 1150px){
-        .habilidades-container{
-            gap: 70px;
-            grid-template-columns: 500px 500px ;
-        }
-    }
 
 /* FIN ESTILO HABILIDADES */
 
@@ -474,6 +433,8 @@ a{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .portafolio-counter{

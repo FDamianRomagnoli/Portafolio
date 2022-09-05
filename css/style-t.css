@@ -31,22 +31,6 @@
     margin: 0 auto;
 }
 
-.habilidades-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.habilidades__card{
-    width: 400px;
-    position: static;
-    margin: 20px;
-}
-
-/* .habilidades-title,.portafolio-title,.contacto-title{
-    text-align: start;
-    padding-left: 25px;
-} */
 
 .contacto-correo p,.contacto-tel p{
     font-size: 18px;
@@ -61,16 +45,37 @@
         gap: 50px;
     }
 
-}
-
-@media (min-width: 880px) {
-
-    .habilidades__card:first-child{
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .habilidades-container{
+        gap: 70px;
     }
 
 }
+
+@media (min-width: 800px){
+
+    .habilidades-container{
+        display: grid;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media (min-width: 1300px){
+
+    .habilidades-container{
+        grid-template-columns: repeat(3, 350px);
+    }
+}
+
+@media (min-width: 1700px){
+
+    .habilidades-container{
+        grid-template-columns: repeat(4, 350px);
+    }
+}
+
+
 
 
 

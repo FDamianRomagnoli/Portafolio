@@ -1,0 +1,27 @@
+[
+    {
+        "name": "HTML",
+        "nivel": "Bueno",
+        "descripcion": "Esta herramienta sirve para estructurar y desplegar paginas web.",
+        "url": "./img/html.svg"
+    },
+    {
+        "name": "CSS3",
+        "nivel": "Bueno",
+        "descripcion": "Esta herramienta sirve para manejar el diseño y presentación de las paginas web.",
+        "url": "./img/css.svg"
+    },
+    {
+        "name": "JavaScript",
+        "nivel": "Bueno",
+        "descripcion": "Lenguaje de programación utilizado para darle interactividad a las paginas web.",
+        "url": "./img/javascript.svg"
+    }
+    ,
+    {
+        "name": "GitHub",
+        "nivel": "Bueno",
+        "descripcion": "Permite subir el codigo a un repositorio en la nube agregando un control de versiones.",
+        "url": "./img/github_skill.svg"
+    }
+]

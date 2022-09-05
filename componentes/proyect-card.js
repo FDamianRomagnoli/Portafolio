@@ -55,6 +55,8 @@ class proyectCard extends HTMLElement {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin: 0 auto;
+                max-width: 361px;
             }
 
             div{
@@ -81,6 +83,41 @@ class proyectCard extends HTMLElement {
 
             p{
                 font-size: 15px;
+            }
+
+            @media (min-width: 500px){
+                .proyect-card{
+                    max-width: 500px;
+                }
+
+                div{
+                    max-width: 500px;
+                    height: 270px;
+                }
+
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            @media (min-width: 550px){
+
+                div{
+                    height: 300px;
+                }
+
+            }
+
+            @media (min-width: 570px){
+
+                div{
+                    height: 350px;
+                }
+
+                p{
+                    font-size: 19px;
+                }
+
             }
         `
     }

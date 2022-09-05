@@ -61,3 +61,10 @@ v2.0.1:
 
 v2.0.2:
 - Agregado javascript controller proyect
+
+v2.1.0:
+- Nuevo diseño de la seccion de habilidades
+- Eliminado diseño anterior de la seccion de habilidad junto a sus componentes
+- Diseño total modificado responsive para mobile y tablet
+- JSON de portafolio y habilidades agregado
+- Agregado controladores para cargar los JSON a la pagina web

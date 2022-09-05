@@ -56,8 +56,6 @@
             <p class="portada__autor">Franco D. Romagnoli</p>
         </section>
 
-        <div class="separador"></div>
-
         <div class="indexeado" id="sobremi"></div>
 
         <section class="main__sobremi">
@@ -66,7 +64,7 @@
 
             <div class="sobremi-container">
                 
-                <p class="title">SOBRE MI</p>
+                <p class="title-sobremi">SOBRE MI</p>
                 <p class="sobremi-related">Hola, bienvenid@ a mi pagina web, Me llamo Franco, tengo 23 años y soy <b>Desarrollador</b>.<br><br>
  
                     Me considero una persona proactiva ,responsable y orientada a resultados,mi meta es crecer profesionalmente.<br><br>
@@ -80,8 +78,6 @@
             </div>     
         </section>
 
-        <div class="separador"></div>
-
         <div class="indexeado" id="habilidades"></div>
 
         <section class="main__habilidades">
@@ -89,37 +85,11 @@
             <p class="title habilidades-title">HABILIDADES</p>
 
             <section class="habilidades-container">
-
-                <div class="habilidades__card">
-                    <h2>TECNOLOGIA</h2>
-                    <ul class="habilidades__tecnologia-list">
-                        <li><skill-item steel="HTML" percentage="70"></skill-item></li>
-                        <li><skill-item steel="CSS" percentage="70"></skill-item></li>
-                        <li><skill-item steel="JavaScript" percentage="70"></skill-item></li>
-                        <li><skill-item steel="SQL" percentage="60"></skill-item></li>
-                        <li><skill-item steel="React.js" percentage="45"></skill-item></li>
-                    </ul>
-                    <div class="circle-container">
-                        <bar-circle percentage="63"></bar-circle>
-                    </div>
-                    
-                </div>
-
-                <div class="habilidades__card">
-                    <h2>HABILIDADES BLANDAS</h2>
-                    <ul class="habilidades__tecnologia-list">
-                        <li><skill-item steel="Resolución de problemas" percentage="70"></skill-item></li>
-                        <li><skill-item steel="Adaptabilidad" percentage="70"></skill-item></li>
-                        <li><skill-item steel="Autonomia" percentage="60"></skill-item></li>
-                        <li><skill-item steel="Comunicación" percentage="60"></skill-item></li>
-                        <li><skill-item steel="Responsabilidad" percentage="100"></skill-item></li>
-                    </ul>
-                    <div class="circle-container">
-                        <bar-circle percentage="72"></bar-circle>
-                    </div>
-                    
-                </div>
-
+                <skill-card nombre="HTML" descripcion="Esta herramienta sirve para estructurar y desplegar paginas web." nivel="Bueno" imagen="./img/html.svg"></skill-card>
+                <skill-card nombre="HTML" descripcion="Esta herramienta sirve para estructurar y desplegar paginas web." nivel="Bueno" imagen="./img/html.svg"></skill-card>
+                <skill-card nombre="HTML" descripcion="Esta herramienta sirve para estructurar y desplegar paginas web." nivel="Bueno" imagen="./img/html.svg"></skill-card>
+                <skill-card nombre="HTML" descripcion="Esta herramienta sirve para estructurar y desplegar paginas web." nivel="Bueno" imagen="./img/html.svg"></skill-card>
+                <skill-card nombre="HTML" descripcion="Esta herramienta sirve para estructurar y desplegar paginas web." nivel="Bueno" imagen="./img/html.svg"></skill-card>
             </section>
 
             
@@ -208,9 +178,9 @@
 
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/controllerProyectos.js"></script>
+    <script src="js/loadingHabilidades.js"></script>
     <script type="module" src="componentes/proyect-card.js"></script>
-    <script type="module" src="componentes/skill-item.js"></script>
-    <script type="module" src="componentes/bar-circle.js"></script>
+    <script type="module" src="componentes/skill-card.js"></script>
     
 </body>
 </html>
