@@ -68,3 +68,6 @@ v2.1.0:
 - Diseño total modificado responsive para mobile y tablet
 - JSON de portafolio y habilidades agregado
 - Agregado controladores para cargar los JSON a la pagina web
+
+v2.2.0:
+- Diseño responsive total

@@ -36,6 +36,7 @@ class proyectCard extends HTMLElement {
             <article class="proyect-card">
                 <h3>${this.nombre}</h3>
                 <div></div>
+                <p class="name"><b>Nombre del proyecto: </b>${this.nombre}</p>
                 <p class="herramientas"><b>Tecnologías utilizadas: </b>${this.herramientas}</p>
                 <p class="produccion"><b>Producido en: </b>${this.produccion}</p>
                 <p class="descripcion"><b>Descripción: </b>${this.descripcion}</p>
@@ -57,6 +58,10 @@ class proyectCard extends HTMLElement {
                 justify-content: center;
                 margin: 0 auto;
                 max-width: 361px;
+            }
+
+            .name{
+                display: none;
             }
 
             div{
@@ -118,6 +123,15 @@ class proyectCard extends HTMLElement {
                     font-size: 19px;
                 }
 
+            }
+
+            @media (min-width: 1200px){
+                h3{
+                    display: none;
+                }
+                .name{
+                    display: inline-block;
+                }
             }
         `
     }

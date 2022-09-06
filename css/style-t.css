@@ -12,15 +12,6 @@
     max-width: 400px;
 }
 
-.portada-bienvenida{
-    font-size: 30px;
-}
-
-.portada-soy{
-    font-size: 44px;
-    width: 100%;
-}
-
 .main__portada{
     background-image: url("../img/portada-tablet.png");
 }
@@ -49,6 +40,23 @@
         gap: 70px;
     }
 
+    .portada-bienvenida{
+        font-size: 30px;
+    }
+    
+    .portada-soy{
+        font-size: 44px;
+        width: 100%;
+    }
+
+    .portafolio-selector{
+        max-width: 800px;
+    }
+    
+    .portafolio-counter{
+        margin-top: -60px;
+    }
+
 }
 
 @media (min-width: 800px){
@@ -59,21 +67,25 @@
         grid-column-gap: 50px;
         grid-template-columns: repeat(2, 350px);
     }
-}
 
-@media (min-width: 1300px){
-
-    .habilidades-container{
-        grid-template-columns: repeat(3, 350px);
+    @media (max-height: 620px){
+        .portada-soy{
+            font-size: 30px;
+        }
+        .portada-bienvenida{
+            font-size: 25px;
+        }
+        .portada-title{
+            gap: 40px;
+            top: -30px;
+        }
     }
+    
 }
 
-@media (min-width: 1700px){
 
-    .habilidades-container{
-        grid-template-columns: repeat(4, 350px);
-    }
-}
+
+
 
 
 

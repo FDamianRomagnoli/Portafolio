@@ -23,5 +23,18 @@
         "nivel": "Bueno",
         "descripcion": "Permite subir el codigo a un repositorio en la nube agregando un control de versiones.",
         "url": "./img/github_skill.svg"
+    },
+    {
+        "name": "JavaScript",
+        "nivel": "Bueno",
+        "descripcion": "Lenguaje de programación utilizado para darle interactividad a las paginas web.",
+        "url": "./img/javascript.svg"
+    }
+    ,
+    {
+        "name": "GitHub",
+        "nivel": "Bueno",
+        "descripcion": "Permite subir el codigo a un repositorio en la nube agregando un control de versiones.",
+        "url": "./img/github_skill.svg"
     }
 ]
