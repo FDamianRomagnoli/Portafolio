@@ -35,8 +35,33 @@ main{
 
 /*Sobre mi*/
 
+.sobremi{
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.sobremi,.main__habilidades,.main__portafolio{
+    min-height: calc( 100vh - 60px );
+}
+
+.main__sobremi{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    background-color: #131313;
+    border-radius: 20px;
+}
+
 .title-sobremi{
     font-size: 38px;
+    color: rgb(215, 40, 40);
+}
+
+.sobremi-related{
+    color: #E8E8E8;
 }
 
 .sobremi-container{

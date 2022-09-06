@@ -6,7 +6,7 @@ class proyectCard extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["nombre","imagen","descripcion","produccion","herramientas"];
+        return ["nombre","imagen","descripcion","produccion","herramientas","url"];
     }
 
     attributeChangedCallback(attr, oldVal, newVal) {
@@ -25,6 +25,9 @@ class proyectCard extends HTMLElement {
         if (attr === "herramientas") {
           this.herramientas = newVal;
         }
+        if (attr === "url") {
+            this.url = newVal;
+          }
         this.disconnectedCallback();
         this.connectedCallback();
       }
@@ -35,7 +38,7 @@ class proyectCard extends HTMLElement {
         template.innerHTML = `
             <article class="proyect-card">
                 <h3>${this.nombre}</h3>
-                <div></div>
+                <a href="${this.url}" target="_blank"></a>
                 <p class="name"><b>Nombre del proyecto: </b>${this.nombre}</p>
                 <p class="herramientas"><b>Tecnologías utilizadas: </b>${this.herramientas}</p>
                 <p class="produccion"><b>Producido en: </b>${this.produccion}</p>
@@ -64,7 +67,7 @@ class proyectCard extends HTMLElement {
                 display: none;
             }
 
-            div{
+            a{
                 background-image: url(${this.imagen});
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -95,7 +98,7 @@ class proyectCard extends HTMLElement {
                     max-width: 500px;
                 }
 
-                div{
+                a{
                     max-width: 500px;
                     height: 270px;
                 }
@@ -107,7 +110,7 @@ class proyectCard extends HTMLElement {
 
             @media (min-width: 550px){
 
-                div{
+                a{
                     height: 300px;
                 }
 
@@ -115,7 +118,7 @@ class proyectCard extends HTMLElement {
 
             @media (min-width: 570px){
 
-                div{
+                a{
                     height: 350px;
                 }
 

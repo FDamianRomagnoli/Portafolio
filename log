@@ -71,3 +71,7 @@ v2.1.0:
 
 v2.2.0:
 - Diseño responsive total
+
+v2.2.1:
+- Nuevo diseño de la seccion sobre mi
+- minimo height en desktop de 100vh
