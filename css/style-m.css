@@ -445,6 +445,10 @@ a{
     margin: 0 auto;
 }
 
+.portafolio-selector-d{
+    display: none;
+}
+
 .portafolio-counter{
     font-weight: 700;
     font-size: 36px;

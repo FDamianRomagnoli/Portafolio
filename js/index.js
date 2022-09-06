@@ -9,6 +9,7 @@ const btnNav2_d = document.querySelector(".nav-habilidades-d");
 const btnNav3_d = document.querySelector(".nav-portafolio-d");
 const btnNav4_d = document.querySelector(".nav-contacto-d");
 const btnDownloadPdf = document.querySelector(".portada-cv");
+const pag = document.querySelector("main");
 
 const btnLinkedin = document.querySelectorAll(".portada-redes-linkedin");
 const btnGithub = document.querySelectorAll(".portada-redes-github");
@@ -80,45 +81,64 @@ btnNav1.addEventListener("click",() =>{
     location.href = "#sobremi";
     estado = !estado;
     efectoMenu(estado);
+    opacityBody();
 });
 
 btnNav2.addEventListener("click",() =>{
     location.href = "#habilidades";
     estado = !estado;
     efectoMenu(estado);
+    opacityBody();
 });
 
 btnNav3.addEventListener("click",() =>{
     location.href = "#portafolio";
     estado = !estado;
     efectoMenu(estado);
+    opacityBody();
 });
 
 btnNav4.addEventListener("click",() =>{
     location.href = "#contacto";
     estado = !estado;
     efectoMenu(estado);
+    opacityBody();
 });
+
+/* NAV DESKTOP */
 
 btnNav1_d.addEventListener("click",() =>{
     location.href = "#sobremi";
+    opacityBody();
+    
 });
 
 btnNav2_d.addEventListener("click",() =>{
     location.href = "#habilidades";
+    opacityBody();
 });
 
 btnNav3_d.addEventListener("click",() =>{
     location.href = "#portafolio";
+    opacityBody();
 });
 
 btnNav4_d.addEventListener("click",() =>{
     location.href = "#contacto";
+    opacityBody();
 });
 
 btnDownloadPdf.addEventListener("click", () =>{
     window.open('./CV.pdf',"_blank");
 })
+
+function opacityBody(){
+    pag.style.animationName = "quiensoy";
+    pag.style.animationDuration = "1.5s";
+    setTimeout(() => {
+        pag.style.animation = 'none';
+    },1000);
+}
 
 function visitarProyecto(url){
     window.open(url,"_blank");

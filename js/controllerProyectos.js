@@ -1,5 +1,5 @@
-btnAtras = document.querySelector(".btnAtras");
-btnSiguiente = document.querySelector(".btnSiguiente");
+btnAtras = document.querySelectorAll(".btnAtras");
+btnSiguiente = document.querySelectorAll(".btnSiguiente");
 counter = document.querySelector(".portafolio-counter");
 
 
@@ -22,17 +22,23 @@ function selectCard(num){
             counter.innerHTML =  num + " de " + tamanioJSON;
             updateCard(jsondata[num-1]);
 
-            btnAtras.addEventListener("click", () => {
-                num = num == 1 ? 1 : num - 1;
-                counter.innerHTML =  num + " de " + tamanioJSON;
-                updateCard(jsondata[num-1]);
-            })
+            btnAtras.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    num = num == 1 ? 1 : num - 1;
+                    counter.innerHTML =  num + " de " + tamanioJSON;
+                    updateCard(jsondata[num-1]);
+                })
+            });
+
+            btnSiguiente.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    num = num < tamanioJSON ? num + 1 : num;
+                    counter.innerHTML =  num + " de " + tamanioJSON;
+                    updateCard(jsondata[num-1]);
+                })
+            });
         
-            btnSiguiente.addEventListener("click", () => {
-                num = num < tamanioJSON ? num + 1 : num;
-                counter.innerHTML =  num + " de " + tamanioJSON;
-                updateCard(jsondata[num-1]);
-            })
+            
         });
 
 }

@@ -206,5 +206,33 @@ header{
 
 .portafolio-container{
     padding-top: 20px;
+    height: 750px;
 }
 
+ 
+
+.portafolio-selector{
+    display: none;
+}
+
+.portafolio-selector-d{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.portafolio-selector-d button{
+    position: relative;
+    top: -420px;
+    width: 50px;
+    border: none;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.portafolio-selector-d button:hover{
+    font-size: 75px;
+}
