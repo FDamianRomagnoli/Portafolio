@@ -134,10 +134,10 @@ btnDownloadPdf.addEventListener("click", () =>{
 
 function opacityBody(){
     pag.style.animationName = "quiensoy";
-    pag.style.animationDuration = "1.5s";
+    pag.style.animationDuration = "1.2s";
     setTimeout(() => {
         pag.style.animation = 'none';
-    },1000);
+    },1300);
 }
 
 function visitarProyecto(url){

@@ -459,6 +459,11 @@ a{
     padding-bottom: 40px;
 }
 
+.portafolio-counter-title{
+    display: none;
+}
+
+
 /* FIN SECCION PORTAFOLIO */
 
 /* SECCION CONTACTO */

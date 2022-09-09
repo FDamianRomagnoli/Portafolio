@@ -40,19 +40,25 @@ main{
     direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 30px;
+    padding: 0px 30px;
 }
 
 .sobremi,.main__habilidades,.main__portafolio{
     min-height: calc( 100vh - 60px );
 }
 
+.sobremi-related::first-letter{
+    font-size: 130%;
+    color: #D72828;
+}
+
+
 .main__sobremi{
     width: 100%;
     height: fit-content;
-    background-color: #131313;
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px 1px rgb(0, 0, 0);
+    background-image: url('../img/sobremi-portada.png');
+    background-size: cover;
+    box-shadow: 0px 1px 3px 2px rgba(0, 0, 0,0.5);
 }
 
 .title-sobremi{
@@ -204,6 +210,19 @@ header{
 
 /* Portafolio */
 
+.portafolio-counter-title{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.portafolio-title{
+    display: inline-block;
+}
+
+.portafolio-counter{
+    display: none;
+}
+
 .portafolio-container{
     padding-top: 20px;
     height: 750px;
@@ -234,5 +253,7 @@ header{
 }
 
 .portafolio-selector-d button:hover{
-    font-size: 75px;
+    /* font-size: 75px; */
+    color: #D72828;
+    transition: .3s;
 }
