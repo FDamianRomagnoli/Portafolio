@@ -1,5 +1,3 @@
-const btnNav = document.querySelector(".header__nav-button");
-const menu = document.querySelector(".header__nav-mobile");
 const btnNav1 = document.querySelector(".nav-sobremi");
 const btnNav2 = document.querySelector(".nav-habilidades");
 const btnNav3 = document.querySelector(".nav-portafolio");
@@ -20,8 +18,7 @@ btnGithub.forEach(element => {
     element.addEventListener("click", () =>{
         setTimeout(()=>{
             visitarProyecto('https://github.com/FDamianRomagnoli');
-            estado = false;
-            efectoMenu(estado);
+            closeNavMobile();
         },800);
         
     });
@@ -31,8 +28,7 @@ btnLinkedin.forEach(element => {
     element.addEventListener("click", () =>{
         setTimeout(()=>{
             visitarProyecto('https://www.linkedin.com/in/francorm/');
-            estado = false;
-            efectoMenu(estado);
+            closeNavMobile();
         },800);
         
     });
@@ -49,61 +45,33 @@ const mainPortafolio = document.querySelector(".main__portafolio");
 let estado = false;
 
 
-btnNav.addEventListener("click",() =>{
-    estado = !estado;
-    efectoMenu(estado);
-});
-
-function efectoMenu(b){
-    if(b){
-        menu.style.right = "1px"
-        animationButton(btnNav,"url(./img/bar-x.svg)");
-        
-    }else{
-        menu.style.right = "-1000px"
-        animationButton(btnNav,"url(./img/bar.svg)" )
-    }
-}
-
-function animationButton(btn,url){
-    btn.style.animationTimingFunction = 'lineal';
-    btn.style.animation = 'navButton';
-    btn.style.animationDuration = '.5s';
-    setTimeout(()=>{
-        btn.style.backgroundImage = url;
-    },250);
-    setTimeout(() =>{
-        btn.style.animation = 'none';
-    },500);
-}
-
 btnNav1.addEventListener("click",() =>{
     location.href = "#sobremi";
-    estado = !estado;
-    efectoMenu(estado);
+    closeNavMobile();
     opacityBody();
 });
 
 btnNav2.addEventListener("click",() =>{
     location.href = "#habilidades";
-    estado = !estado;
-    efectoMenu(estado);
+    closeNavMobile();
     opacityBody();
 });
 
 btnNav3.addEventListener("click",() =>{
     location.href = "#portafolio";
-    estado = !estado;
-    efectoMenu(estado);
+    closeNavMobile();
     opacityBody();
 });
 
 btnNav4.addEventListener("click",() =>{
     location.href = "#contacto";
-    estado = !estado;
-    efectoMenu(estado);
+    closeNavMobile();
     opacityBody();
 });
+
+function cerrarMenu(){
+
+}
 
 /* NAV DESKTOP */
 

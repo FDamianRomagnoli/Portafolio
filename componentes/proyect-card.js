@@ -61,6 +61,7 @@ class proyectCard extends HTMLElement {
                 justify-content: center;
                 margin: 0 auto;
                 max-width: 361px;
+                height: 550px;
             }
 
             .name{
@@ -96,6 +97,7 @@ class proyectCard extends HTMLElement {
             @media (min-width: 500px){
                 .proyect-card{
                     max-width: 500px;
+                    height: 650px;
                 }
 
                 a{
