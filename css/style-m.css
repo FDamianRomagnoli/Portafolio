@@ -8,6 +8,10 @@
     width: 0px;
 }
 
+*{
+    user-select: none;
+}
+
 #particles-js{
     width: 100vw;
     position: absolute;
@@ -641,6 +645,7 @@ a{
 
 .contacto-tel, .contacto-correo{
     align-self: center;
+    
 }
 
 .contacto-tel p, .contacto-correo p{
@@ -652,6 +657,7 @@ a{
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    user-select: text;
 }
 
 .redes-title{

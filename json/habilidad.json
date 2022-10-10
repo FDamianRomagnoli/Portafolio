@@ -29,5 +29,17 @@
         "nivel": "Bueno",
         "descripcion": "Permite almacenar y acceder a los datos a través de múltiples motores de almacenamiento.",
         "url": "./img/mysql-logo.svg"
+    },
+    {
+        "name": "Figma",
+        "nivel": "Bueno",
+        "descripcion": "Sirve para realizar prototipos y realizar la maquetación de forma sencilla",
+        "url": "./img/figma-logo.svg"
+    },
+    {
+        "name": "PHP",
+        "nivel": "Muy Bueno",
+        "descripcion": "Es un lenguaje de programación de uso general que se adapta especialmente al desarrollo web",
+        "url": "./img/php-logo.svg"
     }
 ]
