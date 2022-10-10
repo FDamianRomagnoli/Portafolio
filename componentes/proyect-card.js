@@ -85,7 +85,7 @@ class proyectCard extends HTMLElement {
                 margin: 0 auto;
                 width: fit-content;
                 text-align: center;
-                font-size: 36px;
+                font-size: min(8vw,36px);
                 font-weight: 300;
                 border-bottom: 1px solid #000; 
             }

@@ -17,7 +17,11 @@
 
 .main__portada{
     box-shadow: none;
-    background-image: url('../img/portada-desktop.png');
+    /* background-image: url('../img/portada-desktop.png'); */
+    height: calc( 100vh - 60px );
+}
+
+#particles-js{
     height: calc( 100vh - 60px );
 }
 

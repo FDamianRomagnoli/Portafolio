@@ -75,3 +75,7 @@ v2.2.0:
 v2.2.1:
 - Nuevo diseño de la seccion sobre mi
 - minimo height en desktop de 100vh
+
+v3.0.0:
+- Nueva portada en base a particulas
+- Movimiento de secciones con un nuevo efecto de scroll

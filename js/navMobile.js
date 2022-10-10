@@ -11,6 +11,7 @@ const btnIcon = document.querySelectorAll(".mobile__button i");
 let btnActivate = true;
 
 function main(){
+    nav.style.right = `-${nav.clientWidth}px`
 
     btnHam.addEventListener("click", () =>{
         if(btnActivate){
@@ -39,7 +40,7 @@ function openNavMobile(){
 
 function closeNavMobile(){
     nav.style.transitionTimingFunction = "ease-in";
-    nav.style.right = "-400px";
+    nav.style.right = `-${nav.clientWidth}px`
     transformHam();
     opacity.style.display = "none";
     btnActivate = true;
