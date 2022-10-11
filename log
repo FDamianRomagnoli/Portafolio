@@ -79,3 +79,6 @@ v2.2.1:
 v3.0.0:
 - Nueva portada en base a particulas
 - Movimiento de secciones con un nuevo efecto de scroll
+
+v3.0.1: 
+- Fix bug visual en iconos de github y linkedin

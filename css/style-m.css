@@ -251,6 +251,7 @@ header{
 }
 
 .portada-redes-linkedin{
+    background-image: url('../img/linkedin-red.svg');
     background-image: url('../img/linkedin-white.svg');
     width: 63px;
     height: 60px;
@@ -264,6 +265,7 @@ header{
 }
 
 .portada-redes-github{
+    background-image: url('../img/github-red.svg');
     background-image: url('../img/github-white.svg');
     width: 63px;
     height: 60px;
